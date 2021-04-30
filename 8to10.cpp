@@ -5,10 +5,10 @@ int octaltodecimal(int n){
 	int x=1;
 
 	while(n>0){
-		int y= n%10;
-		ans = ans+(y*x);
-		x *= 8;
-		n = n/10;
+		int y= n%10;//last digit 
+		ans = ans+(y*x);//ans 
+		x *= 8;// multiply base every itration
+		n = n/10;//update number 
 
 	}
 	return ans;
